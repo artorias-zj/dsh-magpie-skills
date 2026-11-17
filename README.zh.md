@@ -28,19 +28,15 @@ magpie（`dsh-our-free-model` 内嵌的引擎）自带技能库：面板上加�
 
 ## 安装
 
-插件以 DSH bundle 形式随 profile 装载。在本 profile 目录里：
+插件以 DSH bundle 形式装载：
 
 ```bash
-# 1) 装进 profile（本地目录链接即可）
-cd ~/.dsh/profiles/desktop
-# 在 package.json 的 dependencies 里加：
-#   "dsh-magpie-skills": "file:D:/Project/DSH/dsh-magpie-skills"
-# 在 dsh.profile.bundles 末尾加：
-#   "dsh-magpie-skills"
-pnpm install
-
-# 2) 重启 DSH
+dsh plugin --profile <profile> add github:artorias-zj/dsh-magpie-skills
 ```
+
+然后重启 DSH。也可以手动装：在 `<dshHome>/profiles/<profile>/package.json` 的
+`dependencies` 里加 `"dsh-magpie-skills": "github:artorias-zj/dsh-magpie-skills"`，
+在 `dsh.profile.bundles` 末尾加 `"dsh-magpie-skills"`，再在该目录执行 `pnpm install`。
 
 ## 技能库在哪
 

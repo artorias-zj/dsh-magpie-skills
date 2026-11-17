@@ -35,17 +35,16 @@ This plugin supplies exactly that piece: read the library, filter by
 
 ## Install
 
-The plugin loads as a DSH bundle. In the profile directory:
+The plugin loads as a DSH bundle:
 
 ```bash
-# 1) add it to the profile: in package.json dependencies
-#      "dsh-magpie-skills": "file:D:/Project/DSH/dsh-magpie-skills"
-#    and append "dsh-magpie-skills" to dsh.profile.bundles
-cd ~/.dsh/profiles/desktop
-pnpm install
-
-# 2) restart DSH
+dsh plugin --profile <profile> add github:artorias-zj/dsh-magpie-skills
 ```
+
+Then restart DSH. Manual alternative: add
+`"dsh-magpie-skills": "github:artorias-zj/dsh-magpie-skills"` to the `dependencies` of
+`<dshHome>/profiles/<profile>/package.json`, append `"dsh-magpie-skills"` to
+`dsh.profile.bundles`, and run `pnpm install` in that directory.
 
 ## Where the library lives
 
