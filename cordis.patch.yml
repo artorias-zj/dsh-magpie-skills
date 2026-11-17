@@ -1,0 +1,7 @@
+# dsh-magpie-skills bundle 层：插入 magpie 技能库提供方的宿主行。
+#
+# 装载后，magpie 面板里「已启用给 dsh」的技能会出现在会话的 `/` 菜单里，
+# 模型侧的 `skill` 工具也能按名字加载它们。技能文件本身不被复制或改写。
+- insert:
+    - id: dsh-magpie-skills
+      name: 'dsh-magpie-skills'
