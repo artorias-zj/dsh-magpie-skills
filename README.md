@@ -47,15 +47,6 @@ pnpm install
 # 2) restart DSH
 ```
 
-Once loaded, the DSH log names the result:
-
-```
-dsh-magpie-skills: 发现 3 条：drawio-skill, karpathy-guidelines, storage-analyzer（库：…）
-```
-
-No such line means the plugin is not loaded. The line saying "发现 0 条" means the path is
-right but no skill is enabled for dsh.
-
 ## Where the library lives
 
 `dsh-our-free-model` starts the magpie engine with an **isolated HOME** (so it never

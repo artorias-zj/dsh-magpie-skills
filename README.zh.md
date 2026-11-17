@@ -42,14 +42,6 @@ pnpm install
 # 2) 重启 DSH
 ```
 
-生效后在 DSH 日志里会看到一行点名：
-
-```
-dsh-magpie-skills: 发现 3 条：drawio-skill, karpathy-guidelines, storage-analyzer（库：…）
-```
-
-没有这一行，说明插件没被装载；有这一行但「发现 0 条」，说明路径对但技能没启用给 dsh。
-
 ## 技能库在哪
 
 magpie 引擎由 `dsh-our-free-model` 以**独立 HOME** 启动（不污染真实用户目录），所以库落在：
